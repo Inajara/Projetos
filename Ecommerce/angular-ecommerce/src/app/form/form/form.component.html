@@ -1,0 +1,16 @@
+<form (ngSubmit)="enviarCompra()">
+    <label>Nome do Cliente:</label>
+    <input type="text" (input)="compra.nomeCliente" name="nomeCliente" required>
+    <br><br>
+    
+    <label>Produto Comprado:</label>
+    <input type="text" (input)="compra.produtoComprado" name="produtoComprado" required>
+    <br><br>
+    
+    <label>Valor:</label>
+    <input type="number" (input)="compra.valor" name="valor" required>
+    <br><br>
+    
+    <button type="button" (click)="enviarCompra()">Enviar Compra</button>
+  </form>
+  
